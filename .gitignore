@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+Terraform/.terraform.lock.hcl
+Terraform/bankapp-automate-key
+Terraform/terraform.tfstate
+Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.94.0/windows_amd64/LICENSE.txt
+Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.94.0/windows_amd64/terraform-provider-aws_v5.94.0_x5.exe
