@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+  namespace: bankapp-namespace
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain  # Keeps the PV after the PVC is deleted
+  storageClassName: standard  # Make sure this matches your cluster's default storage class
+  hostPath:
+    path: /mnt/data/mysql
+    type: DirectoryOrCreate
